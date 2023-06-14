@@ -16,6 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path 
+from django.conf.urls import include
 from second import views as q       
 from firstapp import views as p
 
@@ -24,4 +25,5 @@ urlpatterns = [
     path('ad/',p.f2,name='f2'),
     path('ad1/',q.f4,name='f3'),
     path('admin/', admin.site.urls),
+    path('c/',include('firstapp.urls')),
 ]
