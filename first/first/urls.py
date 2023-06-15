@@ -22,8 +22,7 @@ from firstapp import views as p
 
 urlpatterns = [
     path('', p.f1,name='f1'),
-    path('ad/',p.f2,name='f2'),
-    path('ad1/',q.f4,name='f3'),
+    path('ad1/',q.f4,name='f4'),
     path('admin/', admin.site.urls),
     path('c/',include('firstapp.urls')),
 ]
