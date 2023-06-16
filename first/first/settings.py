@@ -125,7 +125,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
-     'templates/medicare-plus/static',
+     os.path.join(BASE_DIR,'templates'),
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
