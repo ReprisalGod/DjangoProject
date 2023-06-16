@@ -25,4 +25,5 @@ urlpatterns = [
     path('ad1/',q.f4,name='f4'),
     path('admin/', admin.site.urls),
     path('c/',include('firstapp.urls')),
+    path('d/',p.f3),
 ]

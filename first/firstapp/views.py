@@ -6,3 +6,6 @@ def f1(request):
     return HttpResponse("<a href=http://127.0.0.1:8000/admin/>Admin</a>")
 def f2(request):
     return render(request,'medicare-plus/index.html')
+
+def f3(request):
+    return render(request,'ip.html')
