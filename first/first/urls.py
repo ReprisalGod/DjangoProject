@@ -26,4 +26,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('c/',include('firstapp.urls')),
     path('d/',p.f3),
+    path('form/',p.f4),
 ]

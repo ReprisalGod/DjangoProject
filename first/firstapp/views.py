@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from firstapp.models import Student
+from .forms import StudentRegistration
+
 
 # Create your views here.
 def f1(request):
@@ -8,4 +11,8 @@ def f2(request):
     return render(request,'medicare-plus/index.html')
 
 def f3(request):
-    return render(request,'ip.html')
+    st=Student.objects.all()
+    return render(request,'ip.html',{'st':st})
+def f4(request):
+    s=StudentRegistration()
+    return render(request,'enrollform.html',{'si':s})
