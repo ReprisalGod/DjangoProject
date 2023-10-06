@@ -19,8 +19,10 @@ from django.urls import include, path
 from django.conf.urls import include
 from course import views 
 
+
 urlpatterns = [
     path('',views.subj,name='subj'),
     path('c/',include('course.urls')),
     path('admin/', admin.site.urls),
+   
 ]
